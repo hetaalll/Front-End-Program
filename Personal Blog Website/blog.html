@@ -12,6 +12,7 @@
     <link href="css/blog.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -26,163 +27,125 @@
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <!--========NAVBAR=========-->
-    <header>
-        <div class="top">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">Blog<span style="color: red">IT</span>.</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Articles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div id="intro">
-                <p> Hello! Welcome to</p>
-                <h1>Hetal's Blog</h1>
-                <p>stufffff</p>
-            </div>
+    <header id="header">
+        <input type="checkbox" id="toggle-btn">
+        <label for="toggle-btn" class="show-menu-btn"><i class="fa fa-bars"></i></label>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#header">Home</a></li>
+                <li><a href="blogPost.html">Articles</a></li>
+                <li><a href="#">Contact</a></li>
+                <label for="toggle-btn" class="hide-menu-btn"><i class="fa fa-times"></i></label>
+            </ul>
+        </nav>
+        <div id="intro">
+            <p class="header-info"> Hello! Welcome to</p>
+            <h1 class="header-title">BlogIT.</h1>
+            <p class="header-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Diam maecenas sed enim ut sem viverra aliquet eget. Fames ac turpis egestas maecenas. Sit amet facilisis magna etiam tempor orci.
+            </p>
         </div>
     </header>
-    <!--=========END NAVBAR=======-->
-
-    <!-- <div class="grid-container">
-        <div class="item">
-            <div class="item__details">
-                jelly-o brownie sweet <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                Muffin jelly gingerbread <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--medium">
-            <div class="item__details">
-                sesame snaps chocolate <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                Oat cake <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--full">
-            <div class="item__details">
-                jujubes cheesecake <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--medium">
-            <div class="item__details">
-                Dragée pudding brownie <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                Oat cake <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__details">
-                powder toffee <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-        <div class="item item--medium">
-            <div class="item__details">
-                pudding cheesecake <br />
-                <a href="#"> Read More → </a>
-            </div>
-        </div>
-    </div> -->
 
     <div class="grid2">
         <div class="flex2">
-            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 1">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 2">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/blue-lemon.jpg" class="gallery__img" alt="Image 2">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/pineapple.jpg" class="gallery__img" alt="Image 2">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/pineapple.jpg" class="gallery__img" alt="Image 3">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/blue-lemon.jpg" class="gallery__img" alt="Image 3">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/unsplash.jpg" class="gallery__img" alt="Image 4">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/tech_banner.jpg" class="gallery__img" alt="Image 4">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 5">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/random.jpg" class="gallery__img" alt="Image 5">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 6">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/blubs.jpg" class="gallery__img" alt="Image 6">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 7">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/butterfly.jpg" class="gallery__img" alt="Image 7">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 8">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/beach.jpg" class="gallery__img" alt="Image 8">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
         <div class="flex2">
-            <img src="images/balloons-pink.jpg" class="gallery__img" alt="Image 9">
-            <h1>Title of blog</h1>
-            <p>Read more</p>
+            <img src="images/carnival.jpg" class="gallery__img" alt="Image 9">
+            <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+            <a class="read-more" href="blogPost.html">Read More</a>
         </div>
     </div>
 
     <div class="grid-foot">
         <div class="flex">
-            <p>BlogIT.</p>
-            <p>informatrion</p>
-            <p>icons</p>
+            <p class="foot-logo">Blog<span style="color: red">IT</span>.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class = "social-icons">
+                <a href ="#" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true" ></i> </a>
+                &ensp; <a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true" ></i></a>
+                &ensp; <a href="#" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true" ></i></a>
+                &ensp; <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
+            </p> <!--social icons-->
         </div>
         <div class="flex">
-            links
+            <p class="footer-subtitle">Latest Blogs</p>
+            <div class="grid-flex">
+                <div class="flex3">
+                    <img src="images/balloons-pink.jpg" class="foot-gallery__img" alt="Image 8">
+                    <a class="foot-title" href="blogPost.html">Lorem ipsum dolor sit amet</a>
+                </div>
+                <div class = "flex3">
+                    <img src="images/pineapple.jpg" class="foot-gallery__img" alt="Image 8">
+                    <a class="foot-title" href="blogPost.html">Lorem ipsum dolor sit amet</a>
+                </div>
+            </div>
         </div>
         <div class="flex">
-            information
+            <p class="footer-subtitle">Information</p>
+            <ul id="footer-nav">
+                <li><a class= "ul-nav" href="#header">Home</a></li>
+                <li><a class= "ul-nav" href="blogPost.html">Articles</a></li>
+                <li><a class= "ul-nav" href="#footer-nav">Contact</a></li>
+            </ul>
         </div>
         <div class="flex">
-            contact
+            <p class="footer-subtitle">Have a Question?</p>
+            <p class = "contact-info">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>&emsp;&emsp; City, State<br>
+                <i class="fa fa-phone" aria-hidden="true"></i>&emsp;&emsp;123-456-7890<br>
+                <i class="fa fa-envelope" aria-hidden="true"></i></span>&emsp;&emsp;info@example.com
+            </p>
         </div>
     </div>
+    <footer>
+        <p class="footer-copyright">Copyright ©2020 All rights reserved | Hetal Patel Udacity Front End Program</p>
+    </footer>
 
 
 </body>

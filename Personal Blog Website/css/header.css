@@ -1,0 +1,79 @@
+header {
+    background-image: url("../images/clouds.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    height: 100vh;
+}
+
+#intro {
+    color: black;
+    margin: 0 50px;
+    padding-top: 100px;
+}
+
+.header-info {
+    width: 50vw;
+}
+
+.header-title{
+    font-size: 10vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.blog-post-title{
+    font-size: 6vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.navigation {
+    margin: 0px;
+    float: right;
+}
+.navigation li {
+    list-style: none;
+    float: left;
+}
+.navigation li a {
+    color: black;
+    padding: 25px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.navigation li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    margin-right: 25px;
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #ff0000;
+}
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
