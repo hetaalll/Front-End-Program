@@ -11,7 +11,7 @@ header {
 #intro {
     color: black;
     margin: 0 50px;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .header-info {
@@ -19,17 +19,20 @@ header {
 }
 
 .header-title{
-    font-size: 10vw;
+    font-size: 130px;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     letter-spacing: 5px;
 }
 
 .blog-post-title{
-    font-size: 6vw;
+    font-size: 8vw;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     letter-spacing: 5px;
+    text-align: center;
+    top: 50%; left: 0; bottom: 0; right: 0;
+    position: absolute;
 }
 
 .navigation {
@@ -47,33 +50,24 @@ header {
     display: block;
     text-decoration: none;
 }
-.navigation li a i {
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 7px;
-}
-.show-menu-btn,
-.hide-menu-btn {
+
+.show-menu-btn, .hide-menu-btn {
     transition: 0.4s;
     font-size: 30px;
     cursor: pointer;
     display: none;
-}
-.show-menu-btn {
+    margin-top: 10px;
     margin-right: 25px;
     float: right;
-}
-.show-menu-btn i {
-    line-height: 100px;
 }
 .navigation a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover {
-    color: #ff0000;
+    color: #ffbb00;
+    transition: 0.5s;
 }
 #toggle-btn {
     position: absolute;
     visibility: hidden;
-    z-index: -1111;
 }
 

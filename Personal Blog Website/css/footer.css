@@ -33,7 +33,7 @@ footer {
 }
 
 .foot-logo {
-    font-size: 3vw;
+    font-size: 40px;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 700;
 }
@@ -57,7 +57,8 @@ footer {
 
 .footer-subtitle{
     padding-bottom: 15px;
-    font-size: 1.7vw !important;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .foot-title {
@@ -69,10 +70,11 @@ footer {
 .flex3 a.foot-title:hover {
     color: red;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .footer-copyright {
-    font-size: 1.2vw !important;
+    font-size: 15px;
 }
 
 ul#footer-nav {
@@ -90,8 +92,5 @@ a.ul-nav {
 a.ul-nav:hover {
     text-decoration: none;
     color: red;
-}
-
-li a:hover:before {
-    color: red;
+    transition: 0.5s;
 }

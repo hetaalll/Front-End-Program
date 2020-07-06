@@ -5,17 +5,15 @@
 .grid2 {
     display: grid;
     grid-gap: 30px;
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    margin: 100px 200px; /*top right botton left or top/botton left/right*/
-    justify-items: center;
+    margin: 50px;
 }
 
 p, a {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 19px;
 }
 
 .flex2 {
@@ -32,23 +30,69 @@ p, a {
     width: 100%;
 }
 
-@media (max-width:800px) {
-    .top {
-        margin: 0 50px;
-    }
+.content {
+    margin-left: 50px;
+}
 
+.block {
+    margin-bottom: 50px;
+}
+
+.sidebar-title {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+a.categories, p.extra-info {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+a.categories:hover {
+    color: #ffbb00;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a.blog-tags {
+    color: black;
+    text-decoration: none;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 13px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    background-color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+a.blog-tags:hover {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+@media (max-width:800px) {
     .grid2 {
         grid-template-columns: repeat(1, 1fr);
-        margin: 50px;
+    }
+    .content {
+        margin-left: 0;
+    }
+    p, a {
+        font-size: 17px;
     }
 }
 
-@media  (min-width:801px) and (max-width:1500px) {
-    .top {
-        margin: 0 50px;
-    }
-
+@media (min-width:1500px) {
     .grid2 {
-        margin: 50px;
+        margin: 100px 200px;
+    }
+    p, a {
+        font-size: 25px;
     }
 }
