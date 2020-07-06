@@ -19,9 +19,7 @@
 }
 
 .grid2 div.flex2:hover {
-    text-decoration: none;
     transform: scale(1.05);
-    padding: 5px;
 }
 
 .blog-title{
@@ -39,6 +37,17 @@ p, a {
 .gallery__img {
     height: auto;
     width: 100%;
+}
+
+a.read-more {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+
+a.read-more:hover {
+    text-decoration: none;
+    color: red;
+    transition: 0.5s;
 }
 
 @media (max-width:800px) {
