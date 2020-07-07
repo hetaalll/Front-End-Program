@@ -33,7 +33,7 @@
         background: rgb(61, 61, 61);
         top: -100%;
         left: 0;
-        padding: 50px 0px;
+        padding: 25px 0px;
         transition: 1s;
     }
     .navigation li {
@@ -42,7 +42,6 @@
     .navigation li a {
         color: white;
         padding: 15px 30px;
-        text-align: left;
     }
     .hide-menu-btn {
         position: absolute;

@@ -51,7 +51,6 @@ header {
 .navigation li a {
     color: black;
     padding: 25px;
-    text-align: center;
     display: block;
     text-decoration: none;
 }
@@ -59,7 +58,6 @@ header {
 .show-menu-btn, .hide-menu-btn {
     transition: 0.4s;
     font-size: 30px;
-    cursor: pointer;
     display: none;
     margin-top: 10px;
     margin-right: 25px;
