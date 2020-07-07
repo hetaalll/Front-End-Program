@@ -29,6 +29,7 @@ body {
     padding-top: 5px;
     font-family: "Roboto Slab", serif;
     font-weight: 700;
+    font-size: 25px;
 }
 
 p, a {
@@ -42,8 +43,14 @@ p, a {
     width: 100%;
 }
 
-.read-more {
-    text-decoration: none;
+button {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 17px;
+    background-color: white;
+    border: none;
+    padding-left: 0;
     color: rgb(133, 133, 133);
 }
 

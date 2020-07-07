@@ -84,6 +84,10 @@ footer {
     line-height: 40px;
 }
 
+.it {
+    color: red;
+}
+
 .ul-nav {
     text-decoration: none;
     color: white;
