@@ -1,6 +1,9 @@
 @import "footer.css";
 @import "header.css";
 @import "responsive.css";
+body {
+    margin: 0;
+}
 
 .grid2 {
     display: grid;
@@ -22,14 +25,14 @@
     transform: scale(1.05);
 }
 
-.blog-title{
+.blog-title {
     padding-top: 5px;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 700;
 }
 
 p, a {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 400;
     font-size: 19px;
 }
@@ -39,12 +42,12 @@ p, a {
     width: 100%;
 }
 
-a.read-more {
+.read-more {
     text-decoration: none;
     color: rgb(133, 133, 133);
 }
 
-a.read-more:hover {
+.read-more:hover {
     text-decoration: none;
     color: red;
     transition: 0.5s;

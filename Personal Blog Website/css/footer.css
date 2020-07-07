@@ -5,13 +5,12 @@
     grid-auto-rows: auto;
     background-color: rgb(65, 64, 64);
     color: white;
-    padding: 50px;
+    padding: 10px 50px;
     justify-items: center;
 }
 
 footer {
     background-color: rgb(65, 64, 64);
-    text-align: center;
     color: white;
     padding-bottom: 5px;
 }
@@ -21,7 +20,7 @@ footer {
     flex-direction: column;
 }
 
-.social-icons a{
+.social-icons a {
     transition: all 0.7s ease;
     color: white;
     font-size: 25px;
@@ -34,7 +33,7 @@ footer {
 
 .foot-logo {
     font-size: 40px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: "Balsamiq Sans", cursive;
     font-weight: 700;
 }
 
@@ -55,7 +54,7 @@ footer {
     width: 100px;
 }
 
-.footer-subtitle{
+.footer-subtitle {
     padding-bottom: 15px;
     font-size: 25px;
     font-weight: 700;
@@ -67,7 +66,7 @@ footer {
     color: white;
 }
 
-.flex3 a.foot-title:hover {
+.foot-title:hover {
     color: red;
     text-decoration: none;
     transition: 0.5s;
@@ -75,21 +74,22 @@ footer {
 
 .footer-copyright {
     font-size: 15px;
+    text-align: center;
 }
 
-ul#footer-nav {
+#footer-nav {
     list-style-type: square;
     list-style-position: inside;
     padding-left: 0;
     line-height: 40px;
 }
 
-a.ul-nav {
+.ul-nav {
     text-decoration: none;
     color: white;
 }
 
-a.ul-nav:hover {
+.ul-nav:hover {
     text-decoration: none;
     color: red;
     transition: 0.5s;

@@ -11,27 +11,30 @@ header {
 #intro {
     color: black;
     margin: 0 50px;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .header-info {
     width: 50vw;
 }
 
-.header-title{
+.header-title {
     font-size: 130px;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 700;
     letter-spacing: 5px;
 }
 
-.blog-post-title{
+.blog-post-title {
     font-size: 8vw;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
-    top: 50%; left: 0; bottom: 0; right: 0;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
     position: absolute;
 }
 
@@ -39,10 +42,12 @@ header {
     margin: 0px;
     float: right;
 }
+
 .navigation li {
     list-style: none;
     float: left;
 }
+
 .navigation li a {
     color: black;
     padding: 25px;
@@ -60,14 +65,13 @@ header {
     margin-right: 25px;
     float: right;
 }
-.navigation a:hover,
-.show-menu-btn:hover,
-.hide-menu-btn:hover {
+
+.navigation a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {
     color: #ffbb00;
     transition: 0.5s;
 }
+
 #toggle-btn {
     position: absolute;
     visibility: hidden;
 }
-
