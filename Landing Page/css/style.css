@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.navigation {
+    margin: 0px;
+    float: right;
+}
+
+.navigation li {
+    list-style: none;
+    float: left;
+}
+
+.navigation li a {
+    color: black;
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+}
+
+nav {
+    background-color: burlywood;
+    height: 55px;
+}
+
+main {
+    margin: 50px;
+}
