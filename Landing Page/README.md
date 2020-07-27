@@ -5,7 +5,7 @@ This project deals with manipulating the DOM.
 ## File Structure
 ```
 css
-- styles.css
+- style.css
 js
 - app.js
 index.html
