@@ -6,22 +6,22 @@ This project deals with manipulating the DOM.
 ```
 css
 - styles.css
-index.html
 js
 - app.js
+index.html
 README.md
 ```
 
 ## Main functions
 ```
-navBar - creates a dynamic navar based on how many sections are included
+navBar() - creates a dynamic navar based on how many sections are included
 
-checkInViewport - adds special styling to the element that is currently in the viewport
+scrollTo() - scrolls to the element clicked in navbar
 
-scrollTo - scrolls to the element clicked in navbar
+checkInViewport() - adds special styling to the element that is currently in the viewport
 ```
 
 ## Helper functions
 ```
-inViewport - checks if a element is in the viewport
+inViewport() - checks if a element is in the viewport
 ```
