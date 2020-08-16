@@ -14,9 +14,9 @@ function performAction(e) {
     const zipCode = document.getElementById('zip').value;
     // console.log(zipCode);
     getWeather(baseUrl, zipCode, apiKey)
-        .then(function(data){
+        .then(function (data) {
             const userFeelings = document.getElementById('feelings').value;
-            postData('/add', { temp: data.main.temp, date: newDate, feelings: userFeelings});
+            postData('/add', { temp: data.main.temp, date: newDate, feelings: userFeelings });
             //Update UI
             updateUI();
         })
@@ -57,7 +57,7 @@ const postData = async (url = '', data = {}) => {
 };
 
 /* Function to update the UI*/
-const updateUI = async() => {
+const updateUI = async () => {
     // console.log("in update UI")
     const request = await fetch('/all')
     try {
@@ -67,7 +67,7 @@ const updateUI = async() => {
         document.getElementById('date').innerHTML = `DATE: ${data[0].date}`;
         document.getElementById('content').innerHTML = data[0].feelings ? `FEELING: ${data[0].feelings}` : data[0].feelings;
     }
-    catch(error){
+    catch (error) {
         console.log("error", error)
     }
 }

@@ -24,10 +24,10 @@ app.use(express.static('website'));
 
 // Setup Server
 const port = 8000;
-const server = app.listen(port, ()=>{console.log(`running on localhost:${port}`)})
+const server = app.listen(port, () => { console.log(`running on localhost:${port}`) })
 
-// complete GET '/all'
-app.get('/all', function(req, res){
+// GET '/all'
+app.get('/all', function (req, res) {
     // console.log(projectData);
     res.send(projectData);
 })
