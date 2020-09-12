@@ -24,23 +24,22 @@ function handleSubmit(event) {
 
     if (Client.isValid(formText)) {
 
-    Client.checkForName(formText)
-    console.log("::: Form Submitted :::")
-    document.getElementById('model').innerHTML = `analyzing...`;
+        Client.checkForName(formText)
+        console.log("::: Form Submitted :::")
+        document.getElementById('analyzing').innerHTML = `analyzing...`;
 
-
-    postData("http://localhost:8081/meaningCloud", { url: formText })
-        .then(function (data) {
-            console.log(data)
-            document.getElementById('model').innerHTML = `model: ${data.model}`;
-            document.getElementById('score_tag').innerHTML = `score_tag: ${data.score_tag}`;
-            document.getElementById('agreement').innerHTML = `agreement: ${data.agreement}`;
-            document.getElementById('subjectivity').innerHTML = `subjectivity: ${data.subjectivity}`;
-            document.getElementById('confidence').innerHTML = `confidence: ${data.confidence}`;
-            document.getElementById('irony').innerHTML = `irony: ${data.irony}`;
-        })
+        postData("http://localhost:8081/meaningCloud", { url: formText })
+            .then(function (data) {
+                // console.log(data)
+                document.getElementById('model').innerHTML = `model: ${data.model}`;
+                document.getElementById('score_tag').innerHTML = `score_tag: ${data.score_tag}`;
+                document.getElementById('agreement').innerHTML = `agreement: ${data.agreement}`;
+                document.getElementById('subjectivity').innerHTML = `subjectivity: ${data.subjectivity}`;
+                document.getElementById('confidence').innerHTML = `confidence: ${data.confidence}`;
+                document.getElementById('irony').innerHTML = `irony: ${data.irony}`;
+            })
     } else {
-        alert("Please enter a valid URL");
+        alert("Error: Please enter a valid URL");
         return;
     }
 }

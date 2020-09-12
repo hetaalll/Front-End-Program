@@ -22,36 +22,37 @@ dotenv.config();
 console.log(__dirname)
 
 app.get('/', function (req, res) {
-    // res.sendFile('dist/index.html')
-    res.sendFile(path.resolve('src/client/views/index.html'))
+    res.sendFile('dist/index.html')
+    // res.sendFile(path.resolve('src/client/views/index.html'))
 })
 
 // designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
-    })
+})
 
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
 
 app.post('/meaningCloud', postMeaningCloudData);
-    async function postMeaningCloudData(req, res){
-        // console.log(req);
-        const userUrl = req.body.url;
-        const url = `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&lang=en&url=${userUrl}`;
 
-        let response = await fetch(url)
-        let data = await response.json()
+async function postMeaningCloudData(req, res) {
+    // console.log(req);
+    const userUrl = req.body.url;
+    const url = `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&lang=en&url=${userUrl}`;
 
-        const evaluation = {
-            model : data.model,
-            score_tag : data.score_tag,
-            agreement : data.agreement,
-            subjectivity : data.subjectivity,
-            confidence : data.confidence,
-            irony : data.irony
-        }
-        // console.log(evaluation);
-        res.send(evaluation);
+    let response = await fetch(url)
+    let data = await response.json()
+
+    const evaluation = {
+        model: data.model,
+        score_tag: data.score_tag,
+        agreement: data.agreement,
+        subjectivity: data.subjectivity,
+        confidence: data.confidence,
+        irony: data.irony
     }
+    // console.log(evaluation);
+    res.send(evaluation);
+}
