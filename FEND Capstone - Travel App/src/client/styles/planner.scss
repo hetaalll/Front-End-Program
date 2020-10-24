@@ -1,0 +1,69 @@
+.my-trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 15px;
+}
+
+.trip-pic {
+    width: 90%;
+}
+
+.title-center {
+    text-align: center;
+    background-color: rgb(241, 124, 163);
+    font-size: 50px;
+    padding: 10px;
+    font-family: 'Lusitana', serif;
+    margin: 10px 0;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.my-trip-title {
+    padding: 0 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+div.display {
+    font-family: 'Lusitana', serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 20px
+}
+
+.deets {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.weather_icon{
+    float: left;
+    padding-right: 50px;
+    margin: 0
+}
+
+.trip_details{
+    margin: 0
+}
+
+#no_trip {
+    font-family: 'Lusitana', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    color: gray
+}
+
+@media (max-width:1000px) {
+    .my-trips {
+        grid-template-columns: 1fr;
+    }
+    .trip-pic {
+        width: 100%;
+    }
+}

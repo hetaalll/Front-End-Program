@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel App</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lusitana:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class="title-center"> Travel Planner </h2>
+    </header>
+
+    <main>
+        <div class='title'>
+            <p class="my-trip-title">My Trips
+                <button type="button" id="delete-trip" class="btn">delete trip</button>
+                <button type="button" id="add-trip" class="btn">add trip</button>
+            </p>
+        </div>
+        <div class="form-popup" id="add-trip-form">
+            <form class="form-container">
+                <label for="city"><b>Traveling To: </label>
+                <input id="destination" type="text" placeholder="Enter Location">
+                <br />
+                <label for="departure-date"><b>Departing: </label>
+                <input type="date" id="departure" name="departure" class="date">
+                <br />
+                <label for="arrival-date"><b>Arrival: </label>
+                <input type="date" id="arrival" name="arrival" class="date">
+                <br />
+                <button type="save-trip" id="save-btn" class="btn save-btn">Save Trip</button>
+                <button type="close-btn" class="btn close-btn">Close</button>
+            </form>
+        </div>
+        <div class="no_trip_error"></div>
+        <div class="my-trips-container">
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            );
+    </script> -->
+</body>
+
+</html>
